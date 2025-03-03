@@ -125,9 +125,8 @@ async function getCategoryMeals(category) {
 }
 
 
-
 async function getArea() {
-    let res = await fetch(`https:www.themealdb.com/api/json/v1/1/list.php?a=list`)
+    let res = await fetch(`https://www.themealdb.com/api/json/v1/1/list.php?a=list`)
     response = await res.json()
     displaygetArea(response.meals)
 
