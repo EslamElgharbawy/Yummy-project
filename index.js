@@ -57,7 +57,11 @@ $(".sideNave i.open-close-icon").click(() => {
     }
 })
 
-
+async function loadMeals() {
+    let response = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=");
+    let data = await response.json();
+    displayMeals(data.meals || []);
+}
 
 
 async function searchByName(term) {
