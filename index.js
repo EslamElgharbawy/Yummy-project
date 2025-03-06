@@ -23,7 +23,7 @@ function openNav() {
     $(".open-close-icon").addClass("fa-x");
 
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         $(".links li").eq(i).animate({
             top: 0
         }, (i + 5) * 100)
